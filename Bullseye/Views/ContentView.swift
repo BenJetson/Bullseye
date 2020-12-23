@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var alertIsVisible: Bool = false
-    @State private var sliderValue: Double = 50.0
-    @State private var game: Game = Game()
+    @State private var alertIsVisible = false
+    @State private var sliderValue = 50.0
+    @State private var game = Game()
     
     var body: some View {
         VStack {
@@ -44,8 +44,8 @@ struct ContentView: View {
             .alert(
                 isPresented: $alertIsVisible,
                 content: {
-                    let roundedValue: Int = Int(self.sliderValue.rounded())
-                    let points: Int = game.points(sliderValue: roundedValue)
+                    let roundedValue = Int(self.sliderValue.rounded())
+                    let points = game.points(sliderValue: roundedValue)
                     return Alert(
                         title: Text("Hello, there"),
                         message: Text(
