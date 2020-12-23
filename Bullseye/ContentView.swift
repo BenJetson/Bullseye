@@ -45,7 +45,7 @@ struct ContentView: View {
                 content: {
                     return Alert(
                         title: Text("Hello, there"),
-                        message: Text("This is my first popup"),
+                        message: Text("The slider's value is: \(self.sliderValue)"),
                         dismissButton: .default(Text("Awesome!"))
                     )
                 }
