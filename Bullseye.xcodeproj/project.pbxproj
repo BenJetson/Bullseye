@@ -33,6 +33,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E99E6E92592F2AF0068F4D5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9E99E6EA2592F2B70068F4D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9E9DA5B5258ECB35008536DA /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9E99E6EB2592F2BF0068F4D5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9E9DA5B3258ECB35008536DA /* BullseyeApp.swift */,
+				9E9DA5B7258ECB36008536DA /* Assets.xcassets */,
+				9E9DA5BC258ECB36008536DA /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		9E9DA5A7258ECB35008536DA = {
 			isa = PBXGroup;
 			children = (
@@ -52,10 +77,9 @@
 		9E9DA5B2258ECB35008536DA /* Bullseye */ = {
 			isa = PBXGroup;
 			children = (
-				9E9DA5B3258ECB35008536DA /* BullseyeApp.swift */,
-				9E9DA5B5258ECB35008536DA /* ContentView.swift */,
-				9E9DA5B7258ECB36008536DA /* Assets.xcassets */,
-				9E9DA5BC258ECB36008536DA /* Info.plist */,
+				9E99E6EB2592F2BF0068F4D5 /* App */,
+				9E99E6EA2592F2B70068F4D5 /* Views */,
+				9E99E6E92592F2AF0068F4D5 /* Models */,
 				9E9DA5B9258ECB36008536DA /* Preview Content */,
 			);
 			path = Bullseye;
@@ -197,6 +221,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -252,6 +277,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -271,7 +297,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Bullseye/Preview Content\"";
 				DEVELOPMENT_TEAM = T57C36N347;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Bullseye/Info.plist;
+				INFOPLIST_FILE = Bullseye/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -293,7 +319,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Bullseye/Preview Content\"";
 				DEVELOPMENT_TEAM = T57C36N347;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Bullseye/Info.plist;
+				INFOPLIST_FILE = Bullseye/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
