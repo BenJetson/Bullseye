@@ -51,7 +51,8 @@ struct ContentView: View {
                         message: Text(
                             "The slider's value is \(self.sliderValue).\n" +
                                 "The rounded value is \(roundedValue).\n" +
-                                "You won \(points) points."),
+                                "You won \(points) points."
+                        ),
                         dismissButton: .default(Text("Awesome!"))
                     )
                 }
