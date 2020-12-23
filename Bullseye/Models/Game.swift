@@ -13,6 +13,10 @@ struct Game {
     var round: Int = 1
     
     func points(sliderValue: Int) -> Int {
-        return max(0, 10 - abs(self.target - sliderValue))
+        let difference: Int = abs(self.target - sliderValue)
+        let rawScore: Int = 10 - difference
+        
+        // Ensure that the score is never negative.
+        return max(0, rawScore)
     }
 }
