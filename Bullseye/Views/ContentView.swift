@@ -23,7 +23,7 @@ struct ContentView: View {
                 .font(.footnote)
             Text(String(game.target))
                 .fontWeight(.black)
-                .kerning(-1)
+                .kerning(-0.7)
                 .font(.title)
             HStack {
                 Text("1")
