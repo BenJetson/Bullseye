@@ -46,7 +46,7 @@ struct ContentView: View {
                     let roundedValue: Int = Int(self.sliderValue.rounded())
                     return Alert(
                         title: Text("Hello, there"),
-                        message: Text("The slider's value is \(self.sliderValue), and the rounded value is \(roundedValue)"),
+                        message: Text("The slider's value is \(self.sliderValue), and the rounded value is \(roundedValue)."),
                         dismissButton: .default(Text("Awesome!"))
                     )
                 }
